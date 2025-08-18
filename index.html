@@ -1,0 +1,513 @@
+<html lang="ar" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دليل تجهيز حانوت إصلاح الهواتف</title>
+  <meta name="description" content="قائمة مُنظمة لأدوات وتجهيزات حانوت إصلاح الهواتف مع الوظيفة والتكلفة التقريبية بالمغرب">
+  <style>
+    :root{
+      --bg:#0f1221;--card:#171a2b;--muted:#9aa3b2;--text:#e8ecf2;--brand:#7c3aed;--brand-2:#22d3ee;--ok:#10b981;--warn:#f59e0b;--shadow:0 10px 30px rgba(0,0,0,.25);
+      --radius:18px
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 800px at 20% -10%,rgba(124,58,237,.25),transparent),
+                  radial-gradient(900px 700px at 110% 10%,rgba(34,211,238,.18),transparent),
+                  var(--bg);
+         color:var(--text);font-family:"Cairo", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    .wrap{max-width:1200px;margin:0 auto;padding:32px 20px 64px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+    h1{font-weight:800;letter-spacing:.2px;margin:0;font-size:clamp(24px,3.2vw,36px)}
+    .badge{background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:6px 12px;border-radius:999px;font-size:12px;color:white;box-shadow:var(--shadow)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);backdrop-filter: blur(8px);
+          border-radius:var(--radius);box-shadow:var(--shadow)}.tools-bar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0 22px}
+.tools-bar .field{position:relative}
+.tools-bar input, .tools-bar select{width:100%;padding:14px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);
+   background-color:#101325;color:var(--text);outline:none}
+.tools-bar input::placeholder{color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.col{grid-column:span 12}
+@media (min-width:880px){.col-6{grid-column:span 6}}
+
+.section{padding:18px}
+.section h2{margin:0 0 10px;font-size:20px}
+.section p{margin:0 0 12px;color:var(--muted);font-size:14px}
+
+table{width:100%;border-collapse:separate;border-spacing:0 10px}
+thead th{padding:12px 14px;text-align:start;color:#cfd6e3;font-size:13px;font-weight:700}
+tbody tr{transition:transform .18s ease, background .18s ease}
+tbody tr:hover{transform:translateY(-2px)}
+tbody td{background:var(--card);padding:16px 14px;border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08)}
+tbody td:first-child{border-radius:14px 0 0 14px;border-left:1px solid rgba(255,255,255,.08)}
+tbody td:last-child{border-radius:0 14px 14px 0;border-right:1px solid rgba(255,255,255,.08)}
+
+.chip{display:inline-flex;align-items:center;gap:8px;padding:.35rem .6rem;border-radius:999px;font-size:12px;border:1px solid rgba(255,255,255,.12);color:#b9c2d3;background:#11152a}
+.price{font-weight:800;letter-spacing:.3px}
+.muted{color:var(--muted)}
+
+footer{margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.note{color:var(--muted);font-size:13px}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:10px 14px;border:1px solid rgba(255,255,255,.12);
+     background:#12162a;color:var(--text);cursor:pointer;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+
+.hero{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.hero .badge{font-size:12px}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="hero">
+        <span class="badge">نسخة أحادية الملف</span>
+        <h1>دليل تجهيز حانوت إصلاح الهواتف</h1>
+      </div>
+      <a id="downloadBtn" class="btn" href="#">تنزيل الصفحة كملف HTML</a>
+    </header><div class="card section">
+  <p><strong>ماذا يوجد هنا؟</strong> كل الأدوات اللازمة مرتبة حسب <u>الوظيفة</u> مع <u>سعر تقريبي بالدرهم المغربي</u>. استعمل البحث لتصفية الأدوات بسرعة.</p>
+  <div class="tools-bar">
+    <div class="field"><input id="q" type="search" placeholder="ابحث باسم الأداة أو الوظيفة… (مثال: لحام، زجاج)"></div>
+    <div class="field">
+      <select id="category">
+        <option value="">كل التصنيفات</option>
+        <option value="fix">أدوات الإصلاح والفك والتركيب</option>
+        <option value="measure">أدوات القياس والاختبار</option>
+        <option value="solder">أدوات اللحام والإصلاح الدقيق</option>
+        <option value="clean">أدوات التنظيف والحماية</option>
+        <option value="vision">أدوات الرؤية والتفاصيل الدقيقة</option>
+        <option value="org">تجهيزات التنظيم والراحة</option>
+      </select>
+    </div>
+    <div class="field">
+      <select id="sort">
+        <option value="">الترتيب</option>
+        <option value="az">الاسم (أ-ي)</option>
+        <option value="priceUp">السعر (تصاعدي)</option>
+        <option value="priceDown">السعر (تنازلي)</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="grid" id="sections"><section class="col col-6 card section">
+          <h2>أ. أدوات الإصلاح والفك والتركيب</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>مفكات دقيقة (Pentalobe, Torx…)</td>
+                  <td class="muted">فك وتركيب البراغي</td>
+                  <td class="price">50 – 150</td>
+                </tr>
+              
+                <tr>
+                  <td>أدوات فتح بلاستيكية + شفاط</td>
+                  <td class="muted">فتح الهاتف بدون كسر</td>
+                  <td class="price">30 – 100</td>
+                </tr>
+              
+                <tr>
+                  <td>ملاقط دقيقة (Tweezers)</td>
+                  <td class="muted">التعامل مع القطع الصغيرة</td>
+                  <td class="price">20 – 80</td>
+                </tr>
+              
+                <tr>
+                  <td>Heat Gun أو Hot Plate</td>
+                  <td class="muted">تسخين الشاشة لإزالة الزجاج أو الغراء</td>
+                  <td class="price">300 – 700</td>
+                </tr>
+              
+                <tr>
+                  <td>Hot Air Station (Koocu 878AD ~)</td>
+                  <td class="muted">تسخين دقيق للبوردة أو الزجاج</td>
+                  <td class="price">650 – 700</td>
+                </tr>
+              
+                <tr>
+                  <td>Preheater</td>
+                  <td class="muted">تسخين البوردة قبل اللحام</td>
+                  <td class="price">400 – 900</td>
+                </tr>
+              
+                <tr>
+                  <td>Laminating / Vacuum Laminator</td>
+                  <td class="muted">لصق الزجاج بدون فقاعات</td>
+                  <td class="price">1500 – 3000</td>
+                </tr>
+              
+                <tr>
+                  <td>Separating Tools (Blades &amp; Picks)</td>
+                  <td class="muted">فصل الزجاج القديم عن الشاشة</td>
+                  <td class="price">50 – 200</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </section><section class="col col-6 card section">
+          <h2>ب. أدوات القياس والاختبار</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>مولتيميتر (Multimeter)</td>
+                  <td class="muted">قياس الفولتاج والتيار</td>
+                  <td class="price">100 – 300</td>
+                </tr>
+              
+                <tr>
+                  <td>Power Supply DC</td>
+                  <td class="muted">اختبار البوردة قبل التركيب</td>
+                  <td class="price">500 – 1200</td>
+                </tr>
+              
+                <tr>
+                  <td>Infrared Thermometer</td>
+                  <td class="muted">قياس حرارة المكونات بدقة</td>
+                  <td class="price">200 – 600</td>
+                </tr>
+              
+                <tr>
+                  <td>Thermal Camera (Seek CompactPRO~)</td>
+                  <td class="muted">مراقبة حرارة المكونات واكتشاف الأعطال</td>
+                  <td class="price">2000 – 5000</td>
+                </tr>
+              
+                <tr>
+                  <td>Card / Component Tester</td>
+                  <td class="muted">اختبار كارت SIM/البطارية/قطع قبل التركيب</td>
+                  <td class="price">300 – 800</td>
+                </tr>
+              
+                <tr>
+                  <td>جهاز اختبار شاشة/بطارية/USB</td>
+                  <td class="muted">التأكد من سلامة القطع قبل التركيب النهائي</td>
+                  <td class="price">200 – 600</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </section><section class="col col-6 card section">
+          <h2>ج. أدوات اللحام والإصلاح الدقيق</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>مكواة لحام بسيطة (Soldering Iron)</td>
+                  <td class="muted">لحام المكونات العادية</td>
+                  <td class="price">100 – 300</td>
+                </tr>
+              
+                <tr>
+                  <td>Rework Station (Quick 861DW ~)</td>
+                  <td class="muted">إزالة وتركيب القطع الدقيقة (BGA/IC)</td>
+                  <td class="price">≈ 2500</td>
+                </tr>
+              
+                <tr>
+                  <td>Reballing Kit</td>
+                  <td class="muted">إعادة لحام BGA للمعالجات/IC</td>
+                  <td class="price">500 – 1500</td>
+                </tr>
+              
+                <tr>
+                  <td>Schematics + ZXW Tools</td>
+                  <td class="muted">مخططات البوردة للتشخيص واللحام</td>
+                  <td class="price">300 – 800</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </section><section class="col col-6 card section">
+          <h2>د. أدوات التنظيف والحماية</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>Ultrasonic Cleaner</td>
+                  <td class="muted">تنظيف البوردة من الماء والغبرة</td>
+                  <td class="price">500 – 1500</td>
+                </tr>
+              
+                <tr>
+                  <td>كحول إيزوبروبانول 99% + فرشاة</td>
+                  <td class="muted">تنظيف القطع قبل التركيب</td>
+                  <td class="price">50 – 150</td>
+                </tr>
+              
+                <tr>
+                  <td>Anti‑Static Mat + Wristband</td>
+                  <td class="muted">حماية من الكهرباء الساكنة</td>
+                  <td class="price">100 – 300</td>
+                </tr>
+              
+                <tr>
+                  <td>Fume Extractor / مروحة شفط الدخان</td>
+                  <td class="muted">تهوية وحماية أثناء اللحام/اللاصق</td>
+                  <td class="price">300 – 800</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </section><section class="col col-6 card section">
+          <h2>هـ. أدوات الرؤية والتفاصيل الدقيقة</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>Microscope صغير / HD مع كاميرا</td>
+                  <td class="muted">مراقبة القطع الدقيقة أثناء العمل</td>
+                  <td class="price">500 – 1500</td>
+                </tr>
+              
+                <tr>
+                  <td>عدسة مكبرة</td>
+                  <td class="muted">متابعة التفاصيل الدقيقة عند تبديل الزجاج</td>
+                  <td class="price">50 – 200</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </section><section class="col col-6 card section">
+          <h2>و. تجهيزات التنظيم والراحة</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>Organizer Boxes</td>
+                  <td class="muted">تصنيف البراغي والقطع الصغيرة</td>
+                  <td class="price">50 – 150</td>
+                </tr>
+              
+                <tr>
+                  <td>Stickers / Tags</td>
+                  <td class="muted">تصنيف الأجهزة الداخلة للإصلاح</td>
+                  <td class="price">20 – 80</td>
+                </tr>
+              
+                <tr>
+                  <td>دفتر أو سيستم لتسجيل الأعطال</td>
+                  <td class="muted">متابعة العمل على الأجهزة</td>
+                  <td class="price">30 – 100</td>
+                </tr>
+              
+                <tr>
+                  <td>إضاءة LED قوية / White Light</td>
+                  <td class="muted">تحسين الرؤية أثناء العمل</td>
+                  <td class="price">100 – 300</td>
+                </tr>
+              
+                <tr>
+                  <td>Laptop صغير (كاشير/سوفتوير)</td>
+                  <td class="muted">إدارة السوفتوير والفوترة</td>
+                  <td class="price">2000 – 5000</td>
+                </tr>
+              
+                <tr>
+                  <td>UPS / مولد كهرباء صغير</td>
+                  <td class="muted">استمرار العمل أثناء انقطاع الكهرباء</td>
+                  <td class="price">500 – 1500</td>
+                </tr>
+              
+                <tr>
+                  <td>كاميرا مراقبة صغيرة</td>
+                  <td class="muted">أمان الحانوت</td>
+                  <td class="price">300 – 1000</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </section></div>
+
+<footer>
+  <div class="note">القيم سعرية <b>تقريبية</b> مبنية على عروض متاجر مغربية (آخر تحديث: غشت 2025). قد تختلف حسب الماركة والجودة ومتجر الشراء.</div>
+  <div class="chip">🇲🇦 الأسعار بالدرهم المغربي</div>
+</footer>
+
+  </div>  <script>
+    const data = [
+      // أ. أدوات الإصلاح والفك والتركيب (fix)
+      {cat:'fix', name:'مفكات دقيقة (Pentalobe, Torx…)', role:'فك وتركيب البراغي', price:'50 – 150'},
+      {cat:'fix', name:'أدوات فتح بلاستيكية + شفاط', role:'فتح الهاتف بدون كسر', price:'30 – 100'},
+      {cat:'fix', name:'ملاقط دقيقة (Tweezers)', role:'التعامل مع القطع الصغيرة', price:'20 – 80'},
+      {cat:'fix', name:'Heat Gun أو Hot Plate', role:'تسخين الشاشة لإزالة الزجاج أو الغراء', price:'300 – 700'},
+      {cat:'fix', name:'Hot Air Station (Koocu 878AD ~)', role:'تسخين دقيق للبوردة أو الزجاج', price:'650 – 700'},
+      {cat:'fix', name:'Preheater', role:'تسخين البوردة قبل اللحام', price:'400 – 900'},
+      {cat:'fix', name:'Laminating / Vacuum Laminator', role:'لصق الزجاج بدون فقاعات', price:'1500 – 3000'},
+      {cat:'fix', name:'Separating Tools (Blades & Picks)', role:'فصل الزجاج القديم عن الشاشة', price:'50 – 200'},
+
+      // ب. أدوات القياس والاختبار (measure)
+      {cat:'measure', name:'مولتيميتر (Multimeter)', role:'قياس الفولتاج والتيار', price:'100 – 300'},
+      {cat:'measure', name:'Power Supply DC', role:'اختبار البوردة قبل التركيب', price:'500 – 1200'},
+      {cat:'measure', name:'Infrared Thermometer', role:'قياس حرارة المكونات بدقة', price:'200 – 600'},
+      {cat:'measure', name:'Thermal Camera (Seek CompactPRO~)', role:'مراقبة حرارة المكونات واكتشاف الأعطال', price:'2000 – 5000'},
+      {cat:'measure', name:'Card / Component Tester', role:'اختبار كارت SIM/البطارية/قطع قبل التركيب', price:'300 – 800'},
+      {cat:'measure', name:'جهاز اختبار شاشة/بطارية/USB', role:'التأكد من سلامة القطع قبل التركيب النهائي', price:'200 – 600'},
+
+      // ج. أدوات اللحام والإصلاح الدقيق (solder)
+      {cat:'solder', name:'مكواة لحام بسيطة (Soldering Iron)', role:'لحام المكونات العادية', price:'100 – 300'},
+      {cat:'solder', name:'Rework Station (Quick 861DW ~)', role:'إزالة وتركيب القطع الدقيقة (BGA/IC)', price:'≈ 2500'},
+      {cat:'solder', name:'Reballing Kit', role:'إعادة لحام BGA للمعالجات/IC', price:'500 – 1500'},
+      {cat:'solder', name:'Schematics + ZXW Tools', role:'مخططات البوردة للتشخيص واللحام', price:'300 – 800'},
+
+      // د. أدوات التنظيف والحماية (clean)
+      {cat:'clean', name:'Ultrasonic Cleaner', role:'تنظيف البوردة من الماء والغبرة', price:'500 – 1500'},
+      {cat:'clean', name:'كحول إيزوبروبانول 99% + فرشاة', role:'تنظيف القطع قبل التركيب', price:'50 – 150'},
+      {cat:'clean', name:'Anti‑Static Mat + Wristband', role:'حماية من الكهرباء الساكنة', price:'100 – 300'},
+      {cat:'clean', name:'Fume Extractor / مروحة شفط الدخان', role:'تهوية وحماية أثناء اللحام/اللاصق', price:'300 – 800'},
+
+      // هـ. أدوات الرؤية والتفاصيل الدقيقة (vision)
+      {cat:'vision', name:'Microscope صغير / HD مع كاميرا', role:'مراقبة القطع الدقيقة أثناء العمل', price:'500 – 1500'},
+      {cat:'vision', name:'عدسة مكبرة', role:'متابعة التفاصيل الدقيقة عند تبديل الزجاج', price:'50 – 200'},
+
+      // و. تجهيزات التنظيم والراحة (org)
+      {cat:'org', name:'Organizer Boxes', role:'تصنيف البراغي والقطع الصغيرة', price:'50 – 150'},
+      {cat:'org', name:'Stickers / Tags', role:'تصنيف الأجهزة الداخلة للإصلاح', price:'20 – 80'},
+      {cat:'org', name:'دفتر أو سيستم لتسجيل الأعطال', role:'متابعة العمل على الأجهزة', price:'30 – 100'},
+      {cat:'org', name:'إضاءة LED قوية / White Light', role:'تحسين الرؤية أثناء العمل', price:'100 – 300'},
+      {cat:'org', name:'Laptop صغير (كاشير/سوفتوير)', role:'إدارة السوفتوير والفوترة', price:'2000 – 5000'},
+      {cat:'org', name:'UPS / مولد كهرباء صغير', role:'استمرار العمل أثناء انقطاع الكهرباء', price:'500 – 1500'},
+      {cat:'org', name:'كاميرا مراقبة صغيرة', role:'أمان الحانوت', price:'300 – 1000'}
+    ];
+
+    const cats = {
+      fix: 'أ. أدوات الإصلاح والفك والتركيب',
+      measure: 'ب. أدوات القياس والاختبار',
+      solder: 'ج. أدوات اللحام والإصلاح الدقيق',
+      clean: 'د. أدوات التنظيف والحماية',
+      vision: 'هـ. أدوات الرؤية والتفاصيل الدقيقة',
+      org: 'و. تجهيزات التنظيم والراحة'
+    };
+
+    const sectionsEl = document.getElementById('sections');
+
+    function render(list){
+      sectionsEl.innerHTML = '';
+      Object.keys(cats).forEach(key => {
+        const items = list.filter(i => i.cat===key);
+        if(!items.length) return;
+        const col = document.createElement('section');
+        col.className = 'col col-6 card section';
+        col.innerHTML = `
+          <h2>${cats[key]}</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>الأداة</th>
+                <th>الوظيفة</th>
+                <th>السعر التقريبي (د.م)</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${items.map(it => `
+                <tr>
+                  <td>${it.name}</td>
+                  <td class="muted">${it.role}</td>
+                  <td class="price">${it.price}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        `;
+        sectionsEl.appendChild(col);
+      })
+    }
+
+    function normalizeNum(p){
+      // يحاول استخراج أول رقم من نص السعر لمقارنة تقريبية
+      const m = String(p).match(/\d+/);
+      return m ? parseInt(m[0],10) : Number.MAX_SAFE_INTEGER;
+    }
+
+    // البحث + الفلاتر + الترتيب
+    const q = document.getElementById('q');
+    const category = document.getElementById('category');
+    const sortSel = document.getElementById('sort');
+
+    function applyFilters(){
+      let list = data.slice();
+      const term = q.value.trim();
+      const cat = category.value;
+      const sort = sortSel.value;
+
+      if(term){
+        const t = term.toLowerCase();
+        list = list.filter(i => (i.name+" "+i.role).toLowerCase().includes(t));
+      }
+      if(cat){
+        list = list.filter(i => i.cat === cat);
+      }
+      if(sort==='az'){
+        list.sort((a,b)=> a.name.localeCompare(b.name,'ar'))
+      }else if(sort==='priceUp'){
+        list.sort((a,b)=> normalizeNum(a.price) - normalizeNum(b.price))
+      }else if(sort==='priceDown'){
+        list.sort((a,b)=> normalizeNum(b.price) - normalizeNum(a.price))
+      }
+      render(list);
+    }
+
+    q.addEventListener('input', applyFilters);
+    category.addEventListener('change', applyFilters);
+    sortSel.addEventListener('change', applyFilters);
+
+    // تنزيل الصفحة نفسها كملف HTML
+    document.getElementById('downloadBtn').addEventListener('click', (e)=>{
+      e.preventDefault();
+      const blob = new Blob([document.documentElement.outerHTML], {type:'text/html;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'phone-repair-toolkit.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=> URL.revokeObjectURL(url), 1500);
+    });
+
+    // أول رسم
+    render(data);
+  </script>
+</body></html>
