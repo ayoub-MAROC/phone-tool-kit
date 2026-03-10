@@ -19,7 +19,7 @@
 
 ### 🖼️ Preview
 <p align="center">
-  <img src="screenshot.jpg" alt="Phone Tool Kit Dashboard" width="90%" style="border-radius: 10px;">
+  <img src="screenshot.png" alt="Phone Tool Kit Dashboard" width="90%" style="border-radius: 10px;">
   <br>
   <i>Modern Dark UI with Glassmorphism effects.</i>
 </p>
